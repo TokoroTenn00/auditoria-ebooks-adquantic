@@ -1,33 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  CheckCircle2, 
-  XCircle, 
-  Search, 
-  FileText, 
-  Zap, 
-  Phone,
-  TrendingUp,
-  Award,
-  Users,
-  Clock,
-  Shield,
-  Sparkles,
-  Target,
-  BarChart3
-} from "lucide-react";
+import { CheckCircle2, XCircle, Search, FileText, Zap, Phone, TrendingUp, Award, Users, Clock, Shield, Sparkles, Target, BarChart3 } from "lucide-react";
 import ebook1 from "@/assets/ebook-1.jpg";
 import ebook2 from "@/assets/ebook-2.jpg";
 import ebook3 from "@/assets/ebook-3.jpg";
-
 const Index = () => {
   const scrollToCTA = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:32px_32px]" />
@@ -61,18 +46,10 @@ const Index = () => {
             ¿Te suena familiar alguno de estos problemas?
           </h2>
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {[
-              "Tu web recibe visitas pero casi nadie te contacta",
-              "Inviertes en portales y apenas recibes llamadas",
-              "Tus anuncios en redes no generan clientes reales",
-              "Te da miedo gastar en marketing y no ver resultados",
-              "Tus competidores parecen estar un paso por delante"
-            ].map((pain, idx) => (
-              <Card key={idx} className="p-6 flex items-start gap-4 hover:shadow-lg transition-all duration-300 border-l-4 border-l-destructive">
+            {["Tu web recibe visitas pero casi nadie te contacta", "Inviertes en portales y apenas recibes llamadas", "Tus anuncios en redes no generan clientes reales", "Te da miedo gastar en marketing y no ver resultados", "Tus competidores parecen estar un paso por delante"].map((pain, idx) => <Card key={idx} className="p-6 flex items-start gap-4 hover:shadow-lg transition-all duration-300 border-l-4 border-l-destructive">
                 <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
                 <p className="text-lg font-medium text-foreground">{pain}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
           <div className="text-center">
             <p className="text-xl font-semibold mb-6 text-foreground">
@@ -94,34 +71,27 @@ const Index = () => {
           <p className="text-center text-xl text-accent font-bold mb-12">(47€)</p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {[
-              {
-                icon: Search,
-                title: "Análisis completo",
-                desc: "De tu web, redes sociales y fichas en portales inmobiliarios"
-              },
-              {
-                icon: FileText,
-                title: "Informe en PDF",
-                desc: "Con los puntos críticos que te están haciendo perder clientes"
-              },
-              {
-                icon: Zap,
-                title: "3 acciones inmediatas",
-                desc: "Que puedes aplicar ya para captar más leads cualificados"
-              },
-              {
-                icon: Phone,
-                title: "Llamada de 20 minutos",
-                desc: "Donde te explicamos todo paso a paso"
-              }
-            ].map((service, idx) => (
-              <Card key={idx} className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-t-accent">
+            {[{
+            icon: Search,
+            title: "Análisis completo",
+            desc: "De tu web, redes sociales y fichas en portales inmobiliarios"
+          }, {
+            icon: FileText,
+            title: "Informe en PDF",
+            desc: "Con los puntos críticos que te están haciendo perder clientes"
+          }, {
+            icon: Zap,
+            title: "3 acciones inmediatas",
+            desc: "Que puedes aplicar ya para captar más leads cualificados"
+          }, {
+            icon: Phone,
+            title: "Llamada de 20 minutos",
+            desc: "Donde te explicamos todo paso a paso"
+          }].map((service, idx) => <Card key={idx} className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-t-accent">
                 <service.icon className="w-12 h-12 text-accent mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground">{service.desc}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center bg-accent/10 rounded-xl p-8 mb-8">
@@ -144,32 +114,25 @@ const Index = () => {
             Lo que conseguirás al aplicar estas mejoras
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                icon: Users,
-                text: "Más leads cualificados interesados en comprar o vender"
-              },
-              {
-                icon: Award,
-                text: "Imagen profesional que te diferencia de tu competencia"
-              },
-              {
-                icon: TrendingUp,
-                text: "Vender inmuebles más rápido y con menos tiempo perdido"
-              },
-              {
-                icon: Target,
-                text: "Justificar mejor tu comisión ofreciendo un servicio moderno"
-              }
-            ].map((benefit, idx) => (
-              <Card key={idx} className="p-6 flex items-start gap-4 hover:shadow-lg transition-all duration-300">
+            {[{
+            icon: Users,
+            text: "Más leads cualificados interesados en comprar o vender"
+          }, {
+            icon: Award,
+            text: "Imagen profesional que te diferencia de tu competencia"
+          }, {
+            icon: TrendingUp,
+            text: "Vender inmuebles más rápido y con menos tiempo perdido"
+          }, {
+            icon: Target,
+            text: "Justificar mejor tu comisión ofreciendo un servicio moderno"
+          }].map((benefit, idx) => <Card key={idx} className="p-6 flex items-start gap-4 hover:shadow-lg transition-all duration-300">
                 <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <benefit.icon className="w-8 h-8 text-accent mb-2" />
                   <p className="text-lg font-medium text-foreground">{benefit.text}</p>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -179,38 +142,27 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Sparkles className="w-12 h-12 text-accent mx-auto mb-4" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              Además, te llevas GRATIS estos 3 recursos exclusivos
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Además, te llevas GRATIS estos 3 e-books exclusivos</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[
-              {
-                image: ebook1,
-                title: "10 errores que hacen que tu inmobiliaria pierda clientes cada mes",
-                subtitle: "(y cómo evitarlos sin gastar más dinero)",
-                value: "97€"
-              },
-              {
-                image: ebook2,
-                title: "Guía práctica para generar leads inmobiliarios en Facebook e Instagram",
-                subtitle: "sin ser un experto en marketing",
-                value: "97€"
-              },
-              {
-                image: ebook3,
-                title: "El arma secreta para vender inmuebles más rápido",
-                subtitle: "cómo usar fotos y tours virtuales para multiplicar visitas",
-                value: "97€"
-              }
-            ].map((ebook, idx) => (
-              <Card key={idx} className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <img 
-                  src={ebook.image} 
-                  alt={ebook.title}
-                  className="w-full h-80 object-contain rounded-lg mb-4 shadow-lg"
-                />
+            {[{
+            image: ebook1,
+            title: "10 errores que hacen que tu inmobiliaria pierda clientes cada mes",
+            subtitle: "(y cómo evitarlos sin gastar más dinero)",
+            value: "97€"
+          }, {
+            image: ebook2,
+            title: "Guía práctica para generar leads inmobiliarios en Facebook e Instagram",
+            subtitle: "sin ser un experto en marketing",
+            value: "97€"
+          }, {
+            image: ebook3,
+            title: "El arma secreta para vender inmuebles más rápido",
+            subtitle: "cómo usar fotos y tours virtuales para multiplicar visitas",
+            value: "97€"
+          }].map((ebook, idx) => <Card key={idx} className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src={ebook.image} alt={ebook.title} className="w-full h-80 object-contain rounded-lg mb-4 shadow-lg" />
                 <Badge className="mb-2 bg-accent text-accent-foreground">
                   Valor: {ebook.value}
                 </Badge>
@@ -218,8 +170,7 @@ const Index = () => {
                   {ebook.title}
                 </h3>
                 <p className="text-sm text-muted-foreground">{ebook.subtitle}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-xl p-8 mb-8">
@@ -354,8 +305,6 @@ const Index = () => {
       <footer className="py-8 px-4 bg-secondary/50 text-center text-sm text-muted-foreground">
         <p>© 2025 Auditoría Exprés Inmobiliaria. Todos los derechos reservados.</p>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
