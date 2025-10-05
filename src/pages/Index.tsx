@@ -5,6 +5,8 @@ import { CheckCircle2, XCircle, Search, FileText, Zap, Phone, TrendingUp, Award,
 import ebook1 from "@/assets/ebook-1.jpg";
 import ebook2 from "@/assets/ebook-2.jpg";
 import ebook3 from "@/assets/ebook-3.jpg";
+import houseBefore from "@/assets/house-before.jpg";
+import houseAfter from "@/assets/house-after.jpg";
 const Index = () => {
   const scrollToCTA = () => {
     window.scrollTo({
@@ -134,6 +136,62 @@ const Index = () => {
                 </div>
               </Card>)}
           </div>
+        </div>
+      </section>
+
+      {/* Before/After Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-secondary/20 to-background">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+              El poder de una buena fotografía inmobiliaria
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Una imagen profesional puede ser la diferencia entre una visita y un inmueble ignorado
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <Card className="p-6 hover:shadow-xl transition-all duration-300">
+              <Badge variant="destructive" className="mb-4">ANTES</Badge>
+              <img 
+                src={houseBefore} 
+                alt="Foto de propiedad antes de la edición profesional" 
+                className="w-full h-64 object-cover rounded-lg mb-4"
+              />
+              <p className="text-sm text-muted-foreground">
+                Foto sin optimizar: mala iluminación, colores apagados, poco atractiva
+              </p>
+            </Card>
+
+            <Card className="p-6 hover:shadow-xl transition-all duration-300 border-2 border-accent/30">
+              <Badge className="mb-4 bg-accent text-accent-foreground">DESPUÉS</Badge>
+              <img 
+                src={houseAfter} 
+                alt="Foto de propiedad después de la edición profesional" 
+                className="w-full h-64 object-cover rounded-lg mb-4"
+              />
+              <p className="text-sm text-foreground font-medium">
+                Foto optimizada: iluminación profesional, colores vibrantes, máximo impacto visual
+              </p>
+            </Card>
+          </div>
+
+          <Card className="p-8 bg-accent/10 border-accent/20">
+            <div className="flex items-start gap-4">
+              <Target className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-foreground">
+                  Las propiedades con fotos profesionales se venden un 32% más rápido
+                </h3>
+                <p className="text-muted-foreground">
+                  En nuestra auditoría, analizamos la calidad de tus fotografías y te damos 
+                  recomendaciones específicas para que tus inmuebles destaquen sobre la competencia 
+                  y atraigan más compradores cualificados.
+                </p>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
