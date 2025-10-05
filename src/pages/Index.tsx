@@ -8,11 +8,8 @@ import ebook3 from "@/assets/ebook-3.jpg";
 import houseBefore from "@/assets/house-before.jpg";
 import houseAfter from "@/assets/house-after.jpg";
 const Index = () => {
-  const scrollToCTA = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+  const handleCTAClick = () => {
+    window.open('https://wa.link/5yagz9', '_blank');
   };
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -32,7 +29,7 @@ const Index = () => {
             Con nuestra Auditoría Exprés + 3 acciones inmediatas descubrirás los errores que te frenan 
             y te diremos exactamente qué hacer para captar más compradores y propietarios sin malgastar en publicidad.
           </p>
-          <Button size="xl" variant="cta" className="text-lg">
+          <Button size="xl" variant="cta" className="text-lg" onClick={handleCTAClick}>
             Sí, quiero mi auditoría ahora por 47€
           </Button>
           <p className="mt-4 text-sm text-primary-foreground/70">
@@ -57,7 +54,7 @@ const Index = () => {
             <p className="text-xl font-semibold mb-6 text-foreground">
               Si reconoces <span className="text-destructive">al menos 1</span> de estos puntos, necesitas esta auditoría.
             </p>
-            <Button size="lg" variant="cta" onClick={scrollToCTA}>
+            <Button size="lg" variant="cta" onClick={handleCTAClick}>
               Quiero descubrir qué me está frenando
             </Button>
           </div>
@@ -102,7 +99,7 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <Button size="xl" variant="cta">
+            <Button size="xl" variant="cta" onClick={handleCTAClick}>
               Reservar mi auditoría por 47€
             </Button>
           </div>
@@ -242,7 +239,7 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <Button size="xl" variant="cta">
+            <Button size="xl" variant="cta" onClick={handleCTAClick}>
               Acceder ahora a mi auditoría + 3 bonus por 47€
             </Button>
           </div>
@@ -304,7 +301,7 @@ const Index = () => {
           </Card>
 
           <div className="text-center">
-            <Button size="xl" variant="cta">
+            <Button size="xl" variant="cta" onClick={handleCTAClick}>
               Quiero mi auditoría ya por 47€
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">
@@ -342,7 +339,7 @@ const Index = () => {
           <p className="text-lg mb-8 text-primary-foreground/80">
             No dejes que tus competidores sigan llevándose los clientes que podrían ser tuyos.
           </p>
-          <Button size="xl" variant="cta" className="text-lg shadow-2xl">
+          <Button size="xl" variant="cta" className="text-lg shadow-2xl" onClick={handleCTAClick}>
             Sí, quiero mi auditoría por 47€
           </Button>
           <div className="mt-8 flex items-center justify-center gap-8 flex-wrap text-sm text-primary-foreground/70">
