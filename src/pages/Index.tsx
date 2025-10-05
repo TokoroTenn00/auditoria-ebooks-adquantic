@@ -209,7 +209,7 @@ const Index = () => {
                 <img 
                   src={ebook.image} 
                   alt={ebook.title}
-                  className="w-full h-80 object-cover rounded-lg mb-4 shadow-lg"
+                  className="w-full h-80 object-contain rounded-lg mb-4 shadow-lg"
                 />
                 <Badge className="mb-2 bg-accent text-accent-foreground">
                   Valor: {ebook.value}
