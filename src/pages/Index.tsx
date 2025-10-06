@@ -213,8 +213,8 @@ const Index = () => {
             value: "97€"
           }, {
             image: ebook3,
-            title: "El arma secreta para vender inmuebles más rápido",
-            subtitle: "cómo usar fotos y tours virtuales para multiplicar visitas",
+            title: "De inmobiliaria tradicional a marca local líder",
+            subtitle: "Cómo diferenciarte y atraer clientes que te eligen por valor y no por precio",
             value: "97€"
           }].map((ebook, idx) => <Card key={idx} className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <img src={ebook.image} alt={ebook.title} className="w-full h-80 object-contain rounded-lg mb-4 shadow-lg" />
