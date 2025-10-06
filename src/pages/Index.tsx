@@ -136,6 +136,65 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Success Cases Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <Award className="w-12 h-12 text-accent mx-auto mb-4" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+              Casos de éxito
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Inmobiliarias que ya han transformado su marketing digital
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent/10 p-3 rounded-full">
+                  <TrendingUp className="w-8 h-8 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-1">Inmobiliaria Costa del Sol</h3>
+                  <p className="text-sm text-muted-foreground">Marbella, Málaga</p>
+                </div>
+              </div>
+              <p className="text-foreground mb-4 leading-relaxed">
+                "Después de aplicar las recomendaciones de la auditoría, nuestros leads cualificados 
+                aumentaron un <span className="font-bold text-accent">67% en solo 2 meses</span>. 
+                Las mejoras en fotografía y fichas de portales fueron clave."
+              </p>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle2 className="w-4 h-4 text-accent" />
+                <span>+67% leads cualificados</span>
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent/10 p-3 rounded-full">
+                  <Users className="w-8 h-8 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-1">Propiedades Valencia Centro</h3>
+                  <p className="text-sm text-muted-foreground">Valencia</p>
+                </div>
+              </div>
+              <p className="text-foreground mb-4 leading-relaxed">
+                "La auditoría nos abrió los ojos sobre los errores en nuestra web y redes sociales. 
+                Implementamos los cambios y <span className="font-bold text-accent">reducimos el tiempo de venta 
+                en un 40%</span>. Valió cada euro invertido."
+              </p>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle2 className="w-4 h-4 text-accent" />
+                <span>-40% tiempo de venta</span>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Before/After Section */}
       <section className="py-20 px-4 bg-secondary/30">
         <div className="max-w-5xl mx-auto">
