@@ -195,62 +195,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Before/After Section */}
-      <section className="py-20 px-4 bg-secondary/30">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <Target className="w-12 h-12 text-accent mx-auto mb-4" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              El poder de una buena fotografía inmobiliaria
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              La misma propiedad, dos resultados completamente diferentes
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <Card className="p-6 hover:shadow-xl transition-all duration-300">
-              <Badge variant="destructive" className="mb-4">ANTES</Badge>
-              <img 
-                src={houseBefore} 
-                alt="Foto inmobiliaria sin edición profesional - mala iluminación" 
-                className="w-full h-64 object-cover rounded-lg mb-4 shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground">
-                Fotografía sin tratamiento: mala iluminación, colores apagados, poco atractiva
-              </p>
-            </Card>
-
-            <Card className="p-6 hover:shadow-xl transition-all duration-300 border-2 border-accent/30">
-              <Badge className="mb-4 bg-accent text-accent-foreground">DESPUÉS</Badge>
-              <img 
-                src={houseAfter} 
-                alt="Foto inmobiliaria con edición profesional - iluminación perfecta" 
-                className="w-full h-64 object-cover rounded-lg mb-4 shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground">
-                Con edición profesional: luz equilibrada, colores vibrantes, máximo atractivo
-              </p>
-            </Card>
-          </div>
-
-          <Card className="p-8 bg-gradient-to-r from-accent/10 via-accent/5 to-accent/10">
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-              <div>
-                <p className="text-lg font-semibold text-foreground mb-2">
-                  Las propiedades con fotos profesionales se venden un 32% más rápido
-                </p>
-                <p className="text-muted-foreground">
-                  En tu auditoría analizaremos la calidad de tus fotos actuales y te diremos exactamente 
-                  cómo mejorarlas para captar más visitas y acelerar las ventas.
-                </p>
-              </div>
-            </div>
-          </Card>
-        </div>
-      </section>
-
       {/* Bonus eBooks Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
