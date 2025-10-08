@@ -102,7 +102,7 @@ const Index = () => {
             {[{
             icon: Search,
             title: "Análisis completo",
-            desc: "De tu web, redes sociales y fichas en portales inmobiliarios"
+            desc: "De tu web, redes sociales o fichas en portales inmobiliarios."
           }, {
             icon: FileText,
             title: "Informe en PDF",
