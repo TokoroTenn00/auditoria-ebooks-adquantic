@@ -5,36 +5,65 @@ import { CheckCircle2, XCircle, Search, FileText, Zap, Phone, TrendingUp, Award,
 import ebook1 from "@/assets/ebook-1.jpg";
 import ebook2 from "@/assets/ebook-2.jpg";
 import ebook3 from "@/assets/ebook-3.jpg";
-import houseBefore from "@/assets/house-before.jpg";
-import houseAfter from "@/assets/house-after.jpg";
+import logo from "@/assets/logo-adquantic.jpg";
+import heroImage from "@/assets/hero-real-estate.jpg";
 const Index = () => {
   const handleCTAClick = () => {
     window.open('https://wa.link/5yagz9', '_blank');
   };
   return <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="bg-primary text-primary-foreground py-4 px-4 shadow-lg">
+        <div className="max-w-6xl mx-auto">
+          <a href="https://www.adquantic.es/" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
+            <img src={logo} alt="Adquantic - Marketing Digital para Inmobiliarias" className="h-12 md:h-16 w-auto" />
+          </a>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-20 px-4 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-16 md:py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:32px_32px]" />
-        <div className="max-w-5xl mx-auto relative z-10">
-          <Badge className="mb-6 bg-accent text-accent-foreground">
-            ⚡ Resultados en 48 horas
-          </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Tu inmobiliaria podría estar perdiendo clientes cada día
-          </h1>
-          <p className="text-xl md:text-2xl mb-4 text-primary-foreground/90 leading-relaxed">
-            Descubre cómo solucionarlo en <span className="font-bold text-accent">48h</span> por solo <span className="font-bold text-accent">47€</span>
-          </p>
-          <p className="text-lg mb-8 text-primary-foreground/80 max-w-3xl">
-            Con nuestra Auditoría Exprés + 3 acciones inmediatas descubrirás los errores que te frenan 
-            y te diremos exactamente qué hacer para captar más compradores y propietarios sin malgastar en publicidad.
-          </p>
-          <Button size="xl" variant="cta" className="text-lg" onClick={handleCTAClick}>
-            Sí, quiero mi auditoría ahora por 47€
-          </Button>
-          <p className="mt-4 text-sm text-primary-foreground/70">
-            ✓ Sin permanencia · ✓ Resultados garantizados · ✓ 3 bonus incluidos
-          </p>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge className="mb-6 bg-accent text-accent-foreground shadow-lg">
+                ⚡ Resultados garantizados en 48 horas
+              </Badge>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                ¿Por qué tus competidores venden más rápido que tú?
+              </h1>
+              <p className="text-xl md:text-2xl mb-4 text-primary-foreground/90 leading-relaxed font-semibold">
+                Descubre los <span className="text-accent">errores ocultos</span> que alejan a tus clientes ideales
+              </p>
+              <p className="text-lg mb-8 text-primary-foreground/80">
+                Por solo <span className="font-bold text-accent text-2xl">47€</span>, recibe una Auditoría Exprés completa + 3 acciones inmediatas 
+                que transformarán tu captación de leads sin gastar más en publicidad.
+              </p>
+              <Button size="xl" variant="cta" className="text-lg shadow-2xl" onClick={handleCTAClick}>
+                Quiero mi auditoría ahora por 47€
+              </Button>
+              <p className="mt-6 text-sm text-primary-foreground/70 flex flex-wrap gap-4">
+                <span className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-accent" /> Sin permanencia
+                </span>
+                <span className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-accent" /> Resultados en 48h
+                </span>
+                <span className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-accent" /> 3 eBooks gratis (291€)
+                </span>
+              </p>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-3xl"></div>
+              <img 
+                src={heroImage} 
+                alt="Profesional inmobiliaria mostrando análisis de marketing digital a clientes satisfechos" 
+                className="relative rounded-2xl shadow-2xl w-full h-auto"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
