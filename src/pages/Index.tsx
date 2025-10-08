@@ -5,7 +5,7 @@ import { CheckCircle2, XCircle, Search, FileText, Zap, Phone, TrendingUp, Award,
 import ebook1 from "@/assets/ebook-1.jpg";
 import ebook2 from "@/assets/ebook-2.jpg";
 import ebook3 from "@/assets/ebook-3.jpg";
-import logo from "@/assets/logo-adquantic-transparent.png";
+import logo from "@/assets/logo-adquantic-filled.png";
 import heroImage from "@/assets/hero-real-estate.jpg";
 const Index = () => {
   const handleCTAClick = () => {
