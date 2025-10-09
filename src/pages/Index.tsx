@@ -32,15 +32,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <Badge className="mb-2 bg-gradient-to-r from-accent to-accent/90 text-accent-foreground shadow-glow border-0 text-base px-6 py-2 animate-pulse">
-                ⚡ Entrega garantizada en 48 horas
-              </Badge>
+              
               
               <div className="space-y-6">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
-                  <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-                    Duplica tus leads en
-                  </span>
+                  <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Duplica tus </span>
                   <br />
                   <span className="bg-gradient-to-r from-accent via-accent to-white bg-clip-text text-transparent animate-gradient">
                     48 horas
@@ -65,12 +61,7 @@ const Index = () => {
               </div>
               
               <div className="space-y-4">
-                <Button 
-                  size="xl" 
-                  variant="cta" 
-                  className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" 
-                  onClick={handleCTAClick}
-                >
+                <Button size="xl" variant="cta" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" onClick={handleCTAClick}>
                   🚀 Quiero duplicar mis leads ahora
                 </Button>
                 
@@ -95,11 +86,7 @@ const Index = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-accent/10 to-transparent rounded-3xl blur-3xl group-hover:blur-2xl transition-all duration-500 animate-pulse"></div>
               <div className="absolute -inset-1 bg-gradient-to-r from-accent to-transparent rounded-3xl opacity-75 blur-lg"></div>
-              <img 
-                src={heroImage} 
-                alt="Profesional inmobiliario celebrando resultados exitosos con dashboard de analytics mostrando crecimiento en leads y conversiones" 
-                className="relative rounded-3xl shadow-intense w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-500 border-2 border-accent/20"
-              />
+              <img src={heroImage} alt="Profesional inmobiliario celebrando resultados exitosos con dashboard de analytics mostrando crecimiento en leads y conversiones" className="relative rounded-3xl shadow-intense w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-500 border-2 border-accent/20" />
               <div className="absolute bottom-4 right-4 bg-primary/90 backdrop-blur-sm px-6 py-3 rounded-xl border border-accent/30">
                 <p className="text-accent font-bold text-lg">+67% más leads</p>
                 <p className="text-white/70 text-sm">En solo 2 meses</p>
