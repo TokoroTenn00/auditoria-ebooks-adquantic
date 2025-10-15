@@ -61,9 +61,7 @@ const Index = () => {
               </div>
               
               <div className="space-y-4">
-                <Button size="xl" variant="cta" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" onClick={handleCTAClick}>
-                  🚀 Quiero duplicar mis leads ahora
-                </Button>
+                <Button size="xl" variant="cta" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" onClick={handleCTAClick}> Quiero duplicar mis leads ahora</Button>
                 
                 <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/80">
                   <span className="flex items-center gap-2 font-medium">
