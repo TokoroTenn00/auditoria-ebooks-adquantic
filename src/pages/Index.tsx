@@ -361,7 +361,7 @@ const Index = () => {
 
           <div className="text-center">
             <Button size="xl" variant="cta" onClick={handleCTAClick}>
-              Quiero mi auditoría ya por 47€
+              Agendar una llamada
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">
               Plazas limitadas · Resultados en 48h
