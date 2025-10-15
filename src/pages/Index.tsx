@@ -9,7 +9,7 @@ import logo from "@/assets/logo-adquantic.jpg";
 import heroImage from "@/assets/hero-success.jpg";
 const Index = () => {
   const handleCTAClick = () => {
-    window.open('https://adquantic.es/formulario-auditoria-express/', '_blank');
+    window.open('https://calendly.com/adquantic/30min', '_blank');
   };
   return <div className="min-h-screen bg-background">
       {/* Header */}
