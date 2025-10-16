@@ -11,6 +11,10 @@ const Index = () => {
   const handleCTAClick = () => {
     window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank');
   };
+
+  const handleCalendlyClick = () => {
+    window.open('https://calendly.com/adquantic/30min', '_blank');
+  };
   return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="bg-primary text-primary-foreground py-4 px-4 shadow-lg">
@@ -360,7 +364,7 @@ const Index = () => {
           </Card>
 
           <div className="text-center">
-            <Button size="xl" variant="cta" onClick={handleCTAClick}>
+            <Button size="xl" variant="cta" onClick={handleCalendlyClick}>
               Agendar una llamada
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">
