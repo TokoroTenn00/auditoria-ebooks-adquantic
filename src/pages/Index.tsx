@@ -9,7 +9,7 @@ import logo from "@/assets/logo-adquantic.jpg";
 import heroImage from "@/assets/hero-success.jpg";
 const Index = () => {
   const handleCTAClick = () => {
-    window.open('https://calendly.com/adquantic/30min', '_blank');
+    window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank');
   };
   return <div className="min-h-screen bg-background">
       {/* Header */}
