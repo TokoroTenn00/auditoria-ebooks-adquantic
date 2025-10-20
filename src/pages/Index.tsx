@@ -11,7 +11,6 @@ const Index = () => {
   const handleCTAClick = () => {
     window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank');
   };
-
   const handleCalendlyClick = () => {
     window.open('https://calendly.com/adquantic/30min?month=2025-10', '_blank');
   };
@@ -69,7 +68,7 @@ const Index = () => {
                   <Button size="xl" variant="cta" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" onClick={handleCTAClick}>
                     Quiero duplicar mis leads ahora
                   </Button>
-                  <Button size="xl" variant="outline" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold border-2 border-white/30 hover:bg-white/10" onClick={handleCalendlyClick}>
+                  <Button size="xl" variant="outline" onClick={handleCalendlyClick} className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold border-2 border-white/30 text-stone-50 bg-[#383838]/10">
                     Agendar una llamada
                   </Button>
                 </div>
