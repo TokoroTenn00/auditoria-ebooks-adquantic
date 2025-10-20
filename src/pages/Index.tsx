@@ -13,7 +13,7 @@ const Index = () => {
   };
 
   const handleCalendlyClick = () => {
-    window.open('https://calendly.com/adquantic/30min', '_blank');
+    window.open('https://calendly.com/adquantic/30min?month=2025-10', '_blank');
   };
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -65,7 +65,14 @@ const Index = () => {
               </div>
               
               <div className="space-y-4">
-                <Button size="xl" variant="cta" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" onClick={handleCTAClick}> Quiero duplicar mis leads ahora</Button>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <Button size="xl" variant="cta" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold" onClick={handleCTAClick}>
+                    Quiero duplicar mis leads ahora
+                  </Button>
+                  <Button size="xl" variant="outline" className="text-xl px-12 py-8 shadow-intense hover:scale-105 transition-all duration-300 w-full md:w-auto font-bold border-2 border-white/30 hover:bg-white/10" onClick={handleCalendlyClick}>
+                    Agendar una llamada
+                  </Button>
+                </div>
                 
                 <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/80">
                   <span className="flex items-center gap-2 font-medium">
