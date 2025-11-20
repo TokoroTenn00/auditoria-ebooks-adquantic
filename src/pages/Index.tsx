@@ -47,7 +47,7 @@ const Index = () => {
                 </h1>
                 
                 <p className="text-2xl md:text-3xl font-bold text-white/95 leading-tight">
-                  Descubre los <span className="text-accent underline decoration-accent/50 decoration-4 underline-offset-4">3 errores críticos</span> que están haciendo que pierdas clientes cada día
+                  Descubre los <span className="text-accent underline decoration-accent/50 decoration-4 underline-offset-4">3 errores críticos</span> ​y deja de perder leads cada día.      
                 </p>
                 
                 <p className="text-xl md:text-2xl text-primary-foreground/80 leading-relaxed">
