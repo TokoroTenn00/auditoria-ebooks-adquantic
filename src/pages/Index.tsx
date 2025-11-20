@@ -9,7 +9,7 @@ import logo from "@/assets/logo-adquantic.jpg";
 import heroImage from "@/assets/hero-success.jpg";
 const Index = () => {
   const handleCTAClick = () => {
-    window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank');
+    window.open('https://buy.stripe.com/5kQaEX7XTfJYcJP7YI2ZO04', '_blank');
   };
   const handleCalendlyClick = () => {
     window.open('https://calendly.com/adquantic/30min?month=2025-10', '_blank');
@@ -55,10 +55,10 @@ const Index = () => {
                 </p>
                 
                 <div className="flex items-baseline gap-3 py-4">
-                  <span className="text-6xl md:text-7xl font-black text-accent">47€</span>
+                  <span className="text-6xl md:text-7xl font-black text-accent">39€</span>
                   <div className="flex flex-col">
                     <span className="text-2xl line-through text-primary-foreground/40">338€</span>
-                    <span className="text-sm text-accent font-semibold">Ahorra 291€ hoy</span>
+                    <span className="text-sm text-accent font-semibold">Ahorra 299€ hoy</span>
                   </div>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
             Esto es lo que recibirás con la Auditoría Exprés
           </h2>
-          <p className="text-center text-xl text-accent font-bold mb-12">(47€)</p>
+          <p className="text-center text-xl text-accent font-bold mb-12">(39€)</p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {[{
@@ -164,7 +164,7 @@ const Index = () => {
 
           <div className="text-center">
             <Button size="xl" variant="cta" onClick={handleCTAClick}>
-              Reservar mi auditoría por 47€
+              Reservar mi auditoría por 39€
             </Button>
           </div>
         </div>
@@ -301,13 +301,13 @@ const Index = () => {
               <span className="text-accent"> → GRATIS</span>
             </p>
             <p className="text-xl text-muted-foreground">
-              al reservar tu auditoría por solo <span className="font-bold text-accent">47€</span>
+              al reservar tu auditoría por solo <span className="font-bold text-accent">39€</span>
             </p>
           </div>
 
           <div className="text-center">
             <Button size="xl" variant="cta" onClick={handleCTAClick}>
-              Acceder ahora a mi auditoría + 3 bonus por 47€
+              Acceder ahora a mi auditoría + 3 bonus por 39€
             </Button>
           </div>
         </div>
@@ -331,7 +331,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
-            Reserva hoy mismo por solo 47€
+            Reserva hoy mismo por solo 39€
           </h2>
 
           <Card className="p-8 md:p-12 mb-12 bg-gradient-to-br from-secondary/50 to-secondary/30 border-2 border-accent/20">
@@ -353,7 +353,7 @@ const Index = () => {
                   <span className="font-bold"> 3 eBooks de alto valor</span>...
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="text-6xl font-bold text-accent">47€</div>
+                  <div className="text-6xl font-bold text-accent">39€</div>
                   <div className="flex-1">
                     <p className="text-lg text-foreground font-semibold">
                       Precio especial de lanzamiento
@@ -400,14 +400,14 @@ const Index = () => {
             En 48h tendrás en tus manos un plan claro para captar más clientes
           </h2>
           <p className="text-xl mb-10 text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
-            Por solo <span className="font-bold text-accent">47€</span>, obtienes tu auditoría exprés + 
+            Por solo <span className="font-bold text-accent">39€</span>, obtienes tu auditoría exprés + 
             3 acciones inmediatas + 3 eBooks exclusivos.
           </p>
           <p className="text-lg mb-8 text-primary-foreground/80">
             No dejes que tus competidores sigan llevándose los clientes que podrían ser tuyos.
           </p>
           <Button size="xl" variant="cta" className="text-lg shadow-2xl" onClick={handleCTAClick}>
-            Sí, quiero mi auditoría por 47€
+            Sí, quiero mi auditoría por 39€
           </Button>
           <div className="mt-8 flex items-center justify-center gap-8 flex-wrap text-sm text-primary-foreground/70">
             <span className="flex items-center gap-2">
