@@ -38,8 +38,10 @@ const Index = () => {
               
               
               <div className="space-y-6">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
-                  <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Empieza a recibir clientes en</span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-[1.1] tracking-tight">
+                  <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Empieza a recibir</span>
+                  <br />
+                  <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">clientes en</span>
                   <br />
                   <span className="bg-gradient-to-r from-accent via-accent to-white bg-clip-text text-transparent animate-gradient">
                     48 horas
